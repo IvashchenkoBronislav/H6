@@ -19,22 +19,48 @@
 
         // 2 задание
         
-        function createCounter() {
-            let count = 0;
+        // function makeCounter() {
+        //     let count = 0;
 
-            const f = function counter() {
-                console.log(count++);
-            };
+        //     const f = function counter() {
+        //         console.log(count++);
+        //     };
 
-        return f;
+        //     return f;
+        // }
+
+        // const counter= makeCounter(); 
+        // const counter1=makeCounter();
+
+        // counter();
+        // counter();
+        // counter1();
+        // counter();
+        // counter1();
+
+        // 3 задание 
+        
+        function sumInput() {
+
+        let arr = [];
+
+        while (true) {
+
+            let a = prompt("Введите число", 0);
+            if (a === "" || a === null || !isFinite(a)) break;
+            arr.push(+a);
         }
 
+        let sum = 0;
+        for (let number of arr) {
+            sum += number;
+            }
+            return sum;
+        }
 
-        counter();
-        caunter();
-        caunter();
-        caunter();
-        caunter();
+        console.log(sumInput());
+
+        
     </script>
 </head>
 <body>
