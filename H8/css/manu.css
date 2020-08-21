@@ -1,0 +1,39 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+.calculator{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.calculator__log{
+    width: 300px;
+    display: flex;    
+}
+
+.calculator__log__operation{
+    width: 300px;
+    height: 100%;    
+}
+
+.calculator__log__result{
+    width: 300px;
+    height: 100%;    
+}
+
+.calculator__button_log{
+    width: 100px;
+    height: 20px;
+}
+
+/* <ul>
+                <li>${result[0]}</li>
+                <li>${result[1]}</li>
+                <li>${result[2]}</li>
+                <li>${result[3]}</li>
+                <li>${result[4]}</li>
+            </ul>` */

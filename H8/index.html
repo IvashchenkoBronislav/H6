@@ -4,23 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H8</title>
-    <script>
-        
-        let calculatorLog = [
-            {operation: "1+2+(3/3)",result: "4"},
-            {operation: "54+38",result: "92"},
-            {operation: "(23+35)/2",result: "27"},
-            {operation: "2*2*2*2",result: "16"},
-            {operation: "(35675+25400)/4",result: "15268,75"},
-        ]
-        
-        
-        console.log(calculatorLog)
-
-    </script>
+    <link rel="stylesheet" href="css/manu.css">
+    
 </head>
 <body>
+    <div class="calculator">
+        <div class="calculator__log">
+            <div class="calculator__log__operation">
+                
+            </div>
+            <div class="calculator__log__result"></div>
+        </div>
+        <button class="calculator__button_log" id="log"></button>
+
+    </div>
+        <!-- 1 задание -->
+    <script>        
+    let calculatorLog = [
+        {operation: "1+2+(3/3)",result: "4"},
+        {operation: "54+38",result: "92"},
+        {operation: "(23+35)/2",result: "27"},
+        {operation: "2*2*2*2",result: "16"},
+        {operation: "(35675+25400)/4",result: "15268,75"},
+        ]
+    
+
+    let operation = calculatorLog.map(function(item){
+        return item.operation
+    })         
+    console.log(operation);
+
+
+    let result = calculatorLog.map(function(item){
+        return item.result;           
+    })
+    console.log(result);
+
+    
+    const resultLog = document.querySelector(".calculator__log__result");
+    const buttonLog = document.querySelector("#log");
+    const operationLog = document.querySelector(".calculator__log__operation");
+
+    let toggel = true;
+
+    buttonLog.innerHTML="Открыть Log"
+
+    buttonLog.addEventListener('click', () =>{
+        
+        if ( toggel == true){
+
+            buttonLog.innerHTML="Закрыть Log"
+            
+            operationLog.innerHTML=`
+            <ul>
+                <li>${operation[0]}</li>
+                <li>${operation[1]}</li>
+                <li>${operation[2]}</li>
+                <li>${operation[3]}</li>
+                <li>${operation[4]}</li>
+            </ul>`
+
+            resultLog.innerHTML= `<ul>
+                <li>${result[0]}</li>
+                <li>${result[1]}</li>
+                <li>${result[2]}</li>
+                <li>${result[3]}</li>
+                <li>${result[4]}</li>
+            </ul>`
+            
+            
+            
+            console.log("1")
+            return toggel= false;
+        } else {
+            buttonLog.innerHTML="Открыть Log"
+            operationLog.innerHTML=""
+            resultLog.innerHTML=""
+            console.log("2")
+            return toggel=true;
+        }
+    });
+</script>
+
+<script>
+    let arrChet = [{user: 'Alex', message: 'some text', isMyMessage: false},
+    {user: 'Broni', message: 'some text', isMyMessage: true},
+    {user: 'Alex', message: 'some text', isMyMessage: false},
+    {user: 'Broni', message: 'some text', isMyMessage: true},
+    {user: 'Alex', message: 'some text', isMyMessage: false},
+    {user: 'Broni', message: 'some text', isMyMessage: true}]
+
+    console.log(arrChet)
+</script>
     
     
 </body>
+    
 </html>
