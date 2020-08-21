@@ -18,6 +18,11 @@
         <button class="calculator__button_log" id="log"></button>
 
     </div>
+
+    <div class="chet">
+        <div class="chet__noMy_message"></div>
+        <div class="chet__my_message"></div>
+    </div>
         <!-- 1 задание -->
     <script>        
     let calculatorLog = [
@@ -74,27 +79,53 @@
             
             
             
-            console.log("1")
+            
             return toggel= false;
         } else {
             buttonLog.innerHTML="Открыть Log"
             operationLog.innerHTML=""
             resultLog.innerHTML=""
-            console.log("2")
+            
             return toggel=true;
         }
     });
 </script>
 
 <script>
-    let arrChet = [{user: 'Alex', message: 'some text', isMyMessage: false},
-    {user: 'Broni', message: 'some text', isMyMessage: true},
-    {user: 'Alex', message: 'some text', isMyMessage: false},
-    {user: 'Broni', message: 'some text', isMyMessage: true},
-    {user: 'Alex', message: 'some text', isMyMessage: false},
-    {user: 'Broni', message: 'some text', isMyMessage: true}]
+    let arrChet = [{user: 'Alex', message: '1', isMyMessage: false},
+    {user: 'Alex', message: '3', isMyMessage: false},
+    {user: 'Broni', message: '2', isMyMessage: true},    
+    {user: 'Broni', message: '4', isMyMessage: true},
+    {user: 'Alex', message: '5', isMyMessage: false},
+    {user: 'Broni', message: '6', isMyMessage: true}]
 
-    console.log(arrChet)
+    let myMessage = document.querySelector(".chet__my_message");
+    let nyMessage = document.querySelector(".chet__noMy_message")
+    
+    
+    
+    arrChet.map(function (item){
+        if (item.isMyMessage == true){
+            myMessage.innerHTML = `
+            <div class = " myMesStyle">${item.message}</div>
+            `
+            
+            console.log(item.message)
+        }else{
+            console.log(item.message)
+        } 
+    })
+
+
+
+       
+    
+  
+   
+    
+    
+    
+
 </script>
     
     

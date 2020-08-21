@@ -26,14 +26,31 @@ body{
 }
 
 .calculator__button_log{
-    width: 100px;
+    width: px;
     height: 20px;
 }
 
-/* <ul>
-                <li>${result[0]}</li>
-                <li>${result[1]}</li>
-                <li>${result[2]}</li>
-                <li>${result[3]}</li>
-                <li>${result[4]}</li>
-            </ul>` */
+.chet{
+    display: flex;
+    flex-direction: row;
+    margin:0 auto;
+    width: 500px;
+}
+
+.chet__my_message{
+    width: 250px;
+    display: flex;
+    flex-direction:column-reverse;
+    background-color: aqua;
+    justify-self: end;
+    
+
+}
+
+.chet__noMy_message{
+    width: 250px;
+    display: flex;
+    flex-direction:column-reverse ;
+    background-color: aquamarine;
+    justify-self: end;
+}
