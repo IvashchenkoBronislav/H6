@@ -20,8 +20,7 @@
     </div>
 
     <div class="chet">
-        <div class="chet__noMy_message"></div>
-        <div class="chet__my_message"></div>
+        <div class="chet__message"></div>
     </div>
         <!-- 1 задание -->
     <script>        
@@ -62,19 +61,19 @@
             
             operationLog.innerHTML=`
             <ul>
-                <li>${operation[0]}</li>
-                <li>${operation[1]}</li>
-                <li>${operation[2]}</li>
-                <li>${operation[3]}</li>
                 <li>${operation[4]}</li>
+                <li>${operation[3]}</li>
+                <li>${operation[2]}</li>
+                <li>${operation[1]}</li>
+                <li>${operation[0]}</li>
             </ul>`
 
             resultLog.innerHTML= `<ul>
-                <li>${result[0]}</li>
-                <li>${result[1]}</li>
-                <li>${result[2]}</li>
-                <li>${result[3]}</li>
                 <li>${result[4]}</li>
+                <li>${result[3]}</li>
+                <li>${result[2]}</li>
+                <li>${result[1]}</li>
+                <li>${result[0]}</li>
             </ul>`
             
             
@@ -92,41 +91,37 @@
 </script>
 
 <script>
-    let arrChet = [{user: 'Alex', message: '1', isMyMessage: false},
-    {user: 'Alex', message: '3', isMyMessage: false},
-    {user: 'Broni', message: '2', isMyMessage: true},    
-    {user: 'Broni', message: '4', isMyMessage: true},
-    {user: 'Alex', message: '5', isMyMessage: false},
-    {user: 'Broni', message: '6', isMyMessage: true}]
+    let arrChet = [{user: 'Alex', message: 'Никогда в обществе программистов не говори, что ты альфа-самец. Это еще почему? Потому, что для них это означает сильно недоделанный вариант.', isMyMessage: false},
+    {user: 'Alex', message: 'Когда появятся беспилотные самолеты, первыми в них откажутся летать программисты.', isMyMessage: false},
+    {user: 'Broni', message: 'У меня была одна проблема, поэтому я решил написать программу, которая её решит. Теперь у меня есть 1 проблема, 9 ошибок и 12 предупреждений.', isMyMessage: true},    
+    {user: 'Broni', message: 'Программистам яндекса следовало бы помнить: Порядочный человек никогда не поменяет кнопки "да" и "отмена" местами.', isMyMessage: true},
+    {user: 'Alex', message: 'Менять ничего не рекомендую, хрупкий баланс ошибок, компенсирующих друг друга, заставляет программу работать.', isMyMessage: false},
+    {user: 'Broni', message: 'Нет повести печальнее на свете, чем сисадмин в госсекторе и Petya.', isMyMessage: true},
+    {user: 'Broni', message: 'На работе с утра программист бегает и ворчит: Кто брал мою кружку? (задумался) И вымыл её!?..', isMyMessage: true}]
 
-    let myMessage = document.querySelector(".chet__my_message");
-    let nyMessage = document.querySelector(".chet__noMy_message")
+    let message = document.querySelector(".chet__message");
+    
     
     
     
     arrChet.map(function (item){
         if (item.isMyMessage == true){
-            myMessage.innerHTML = `
-            <div class = " myMesStyle">${item.message}</div>
+            message.innerHTML += `<div class="myMesStyle">
+                <div class="name">${item.user}</div>
+                <div>${item.message}</div>
+            </div>
             `
-            
-            console.log(item.message)
+
         }else{
-            console.log(item.message)
+            message.innerHTML += `<div class="noMyMesStyle">
+                <div class="name">${item.user}</div>
+                <div>${item.message}</div>
+            </div>
+            `
+           
         } 
     })
-
-
-
-       
-    
-  
-   
-    
-    
-    
-
-</script>
+    </script>
     
     
 </body>
