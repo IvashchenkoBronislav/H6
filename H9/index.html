@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="calculator">
-        <input type="text">
+        <input type="number" value="0">
         
         <div class="calculator__button">
             <div class="calculator__button__nam">
@@ -22,7 +22,7 @@
                     <button value="8"><img src="src/8.png" alt="8"></button>
                     <button value="5"><img src="src/5.png" alt="5"></button>
                     <button value="2"><img src="src/2.png" alt="2"></button>
-                    <button><img src="src/0.png" alt="0"></button>
+                    <button value="0"><img src="src/0.png" alt="0"></button>
                 </div>
                 <div>                
                     <button value="9"><img src="src/9.png" alt="9"></button>
@@ -39,15 +39,40 @@
                     <button value="+"><img src="src/+.png" alt="+"></button>
                 </div>
                 <div>                
-                    <button>EC</button>
-                    <button></button>
+                    <button value="clin">AC</button>
+                    <button class="nan"></button>
                     <button value="%"><img src="src/%.png" alt="%"></button>
                     <button value="="><img src="src/=.png" alt="="></button>
+                </div>
+            </div>
+            <div class="calculator__button__dop">
+                <div>                
+                    <button>INV</button>
+                    <button>sin</button>
+                    <button>In</button>
+                    <button>𝝅</button>
+                    <button>(</button>
+                </div>
+                <div>                
+                    <button>DEG</button>
+                    <button>cos</button>
+                    <button>log</button>
+                    <button>e</button>
+                    <button>)</button>
+                </div>
+                <div>                
+                    <button class="nan"></button>
+                    <button>tan</button>
+                    <button>√</button>
+                    <button>∧</button>
+                    <button>!</button>
                 </div>
             </div>
         
         </div>
     </div>
+    
+    </script>
     
 </body>
     <script src="js/calcul.js"></script>
