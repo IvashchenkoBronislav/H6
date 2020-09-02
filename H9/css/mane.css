@@ -1,0 +1,236 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+}
+
+.calculator{
+    
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #b1ad9e55;
+}
+
+
+
+.nan:hover{
+    background-color: red;
+}
+
+.scrin{
+    max-width: 808px;
+    width: 798px;    
+    height: 100px;
+    font-size: 32px;
+    padding: 2px;
+    margin: 25px 0px 0px 0px;
+    text-align: right;
+    appearance: none;
+    user-select: none;
+    
+}
+
+.calculator__button{
+    display: flex;    
+    max-width:1500px;
+    flex-direction: row;
+}
+
+.calculator__button__nam{
+    display: flex;
+    flex-direction: row;
+    margin:25px 0px 0px 0px
+}
+
+.calculator__button__nam>div{
+    display: flex;
+    flex-direction: column;    
+}
+
+.calculator__button__nam>div:last-child{
+    border-right: 5px solid #5e73a165;   
+
+}
+
+.calculator__button__nam>div>button{
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    border: none;
+    outline: none;
+    background-color: #b1ad9e55;
+    user-select: none;
+}
+
+.none{
+    width: 100px;
+    height: 100px;
+    border: none;
+    background-color: #b1ad9e55;
+    user-select: none;
+
+}
+
+.calculator__button__nam>div>button:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.calculator__button__nam>div>button>img{
+    width: 50px;
+
+}
+
+.calculator__button__symbols{
+    display: flex;
+    flex-direction: row;
+    margin-top:25px ;
+}
+
+.calculator__button__symbols>div{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.calculator__button__symbols>div:last-child{
+    border-right: 1px solid #0000002a;   
+
+}
+
+.calculator__button__symbols>div>button{
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    border: none;
+    outline: none;
+    background-color: #b1ad9e55;
+}
+.calculator__button__symbols>div>button>img{
+    width: 75px;
+}
+.calculator__button__symbols>div>button:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.calculator__button__dop{
+    display: flex;
+    flex-direction: row;
+    margin:25px 0px 0px 0px
+}
+
+.calculator__button__dop>div{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.calculator__button__dop>div>button{
+    width: 100px;
+    height: 80px;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: white;
+}
+.calculator__button__dop>div>button:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.none1{
+    width: 100px;
+    height: 80px;
+    border: none;
+    background-color: blue;
+}
+
+.calculator__button__dop>div>button>img{
+    width: 50px;
+
+}
+
+.calculator__button__dop__slid{
+    display: none;
+
+}
+
+@media(max-width:320px){
+    .calculator{
+        width: 320px;
+        min-width: 326px;
+    }
+
+    .scrin{
+        width: 318px;
+    }
+
+
+    .calculator__button__nam>div>button{
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+    }
+
+    .calculator__button__nam>div>button>img{
+        width: 25px;
+    }
+    .calculator__button__symbols>div>button{
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+    }
+
+    .calculator__button__symbols>div>button>img{
+        width: 25px;
+    }
+
+    .none{
+        width: 60px;
+        height: 60px;
+    }
+    .none1{
+        width: 60px;
+        height: 48px;
+    }
+
+    .calculator__button__dop{
+        display: none;
+        position:absolute;
+    }
+    
+
+    .calculator__button__dop>div>button{
+        width: 60px;
+        height: 48px;
+        font-size: 25px;
+    }
+
+    .calculator__button__dop__slid{
+        display: inline;
+        width:30px;
+        background-color: blue;
+        margin-top:25px;
+        outline: none;
+        border: none;
+        color: white;
+    }
+    .calculator__button__dop__slid:hover{
+        background-color: aqua;
+    }
+}
+
+.calculator__button__dop_vis{
+    display: flex;
+}
