@@ -13,7 +13,7 @@ f();
 
 //______________________ 3 задание________________
 const renderWeatherNew =(weatherNew)=>{
-	document.getElementById('temp').innerHTML= `${weatherNew.current.temp}`
+	document.getElementById('temp').innerHTML= `${weatherNew.current.temp} °C`
 	document.getElementById('city').innerHTML= `${weatherNew.timezone}`
 	document.getElementById('wind_speed').innerHTML= `${weatherNew.current.wind_speed} м/c`
 	document.getElementById('humidity').innerHTML= `${weatherNew.current.humidity}%`
