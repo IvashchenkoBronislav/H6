@@ -1,0 +1,95 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+.calculator{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border: 10px inset #1d70c3;
+    border-radius: 10px;
+}
+
+.calculator__log{
+    width: 300px;
+    display: flex;    
+}
+
+.calculator__log__operation{
+    width: 300px;
+    height: 100%;    
+}
+
+.calculator__log__operation>ul{
+    list-style:none;
+}
+
+.calculator__log__result{
+    width: 300px;
+    height: 100%;    
+}
+
+.calculator__log__result>ul{
+    list-style:none;
+}
+
+.calculator__button_log{
+    width: px;
+    height: 20px;
+}
+
+.chet{
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    width: 700px;
+}
+
+
+
+.chet__message{
+    width: 700px;
+    display: flex;
+    flex-direction:column ;
+    background-color: #a3d614;
+    justify-content: flex-end;
+    border-radius: 10px;
+}
+
+.myMesStyle{
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+    border-radius: 5px;
+    width: 75%;
+    color: white;
+    margin-bottom: 5px;
+    position: relative;
+    left: 150px;
+    padding:10px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    word-wrap: break-word;
+    
+}
+
+.noMyMesStyle{
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+    border-radius: 5px;
+    width: 75%;
+    color: white;
+    margin-bottom: 5px;
+    padding:20px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    margin-left: 3px;
+    word-wrap: break-word;
+}
+
+.name{
+    margin-bottom: 10px;
+}
