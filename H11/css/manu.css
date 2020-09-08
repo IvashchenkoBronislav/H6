@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: #753be0;
+    color:#ffffff;
+    position: relative;
+    margin:0 auto;
+    margin-top: 20px;
+}
+
+
+.box>div{
+    display: flex;
+    margin: 5px 5px;
+}
+
+.box>div>div:last-child{
+    margin-left: 5px;
+}
+
+img{
+    width: 50px;
+}
+
+#city{
+    font-size: 18px;
+}
+
+#temp{
+    position: relative;
+    height: 25px;
+    top:15px;
+}
