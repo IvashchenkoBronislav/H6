@@ -1,0 +1,52 @@
+body{
+    margin:0;
+    padding:0;
+    
+}
+
+.conteiner{
+    display: flex;
+    width: 350px;
+    height: 250px;
+    margin:0 auto;   
+    background-color: gold;
+    overflow: hidden;
+    border-radius: 50px;
+    
+}
+
+.scrol{
+    display: flex;
+    position: relative;
+    width: 1000000px; 
+    align-items: center;  
+    transition:right 250ms;
+    right: 0px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 0px 75px;    
+    
+}
+
+.conteiner__button{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+    margin: 90px 15px;
+}
+
+button{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    user-select: none;
+    outline: none;
+    font-size: 30px;
+    z-index: 1;    
+}

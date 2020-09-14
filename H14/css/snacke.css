@@ -1,0 +1,35 @@
+.display{
+    display: flex;
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    position: relative;
+    border:1px solid black; 
+}
+
+.display>div{
+    width: calc(800px / 4);
+}
+.display>div>div{
+    height: calc(800px/4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color:red;
+    
+}
+
+#packman{
+    
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right:0px;
+    transition: 250ms;
+}
+#packman>img{
+    width: 200px;
+    margin: 5px;
+}
