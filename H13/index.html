@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H13</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    //_____________1_____________
+    let hamster = {
+        eat(food) {
+            this.stomach.push(food);
+
+        }
+    };
+
+    let speedy = {
+        stomach: [],
+        __proto__: hamster
+    };
+
+    let lazy = {
+        stomach: [],
+        __proto__: hamster
+    };
+
+
+
+    speedy.eat("apple");
+    speedy.eat("app");
+    console.log( "Быстрый" , speedy.stomach);
+
+
+    console.log( "Медленый" , lazy.stomach);
+    // _____________2_____________
+
+
+    class Animal {
+        constructor(name) {
+            this.name = name;
+        }
+    }
+
+    class Rabbit extends Animal {
+        constructor(name) {
+            super(name);
+            this.created = Date.now();
+        }
+    }
+
+
+    let rabbit = new Rabbit("Белый кролик"); // Error: this is not defined
+
+    console.log(rabbit.name)
+    console.log(rabbit)
+
+</script>
+
+</html>
